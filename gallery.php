@@ -26,14 +26,13 @@
               <li><a href="about.php">About Us</a></li>
               <li><a href="partners.php">Our Partners</a></li>
               <li><a style="text-decoration: underline; color:white" href="#">Gallery</a></li>
-              <li><a href="">Contact Us</a></li>
+              <li><a href="contacts.php">Contact Us</a></li>
             </ul>
         </div>
       </div>
     </div>
     <div style="margin-bottom: 150px;"></div>
-    <div>
-      <div class="head">
+    <div class="head">
         <div>
           <h1 style="text-align: center">
             Below are Some of Our pictures
@@ -46,7 +45,6 @@
           </h3>
         </div>
       </div>
-
       <div class="contain">
         <div class="gal">
           <img
@@ -214,7 +212,6 @@
         </div>
     
       </div>
-    </div>
     <div class="footer" style="margin-top: 150px;">
       
     
