@@ -1,0 +1,820 @@
+.hs-search-field.hs-search-field--open ul.hs-search-field__suggestions {
+    position: absolute;
+    z-index: 99999;
+    background-color: #ffff;
+    padding: 0px;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 16%);
+    border-radius: 6px;
+}
+
+.hs-search-field.hs-search-field--open ul.hs-search-field__suggestions li a {
+    font-size: 13px;
+    color: #212121;
+}
+
+li#results-for {
+    color: #212121;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Poppins,sans-serif;
+      margin-bottom: 14px
+}
+
+
+.hs-search-field.hs-search-field--open ul.hs-search-field__suggestions li {
+    margin-bottom: 8px;
+}
+
+.hs-search-field.hs-search-field--open ul.hs-search-field__suggestions li:last-child {
+    margin: 0;
+}
+
+
+/*** search ****/
+
+
+
+
+.pwr-header-right-bar__phone:hover .pwr-dropdown,
+.pwr-header-right-bar__language-switcher:hover .pwr-dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
+.lang_switcher_class:after {
+   content: 'Language';
+   position: absolute;               
+   top: 50%;                      
+   transform: translate(35%, -50%);
+}
+
+.pwr-dropdown {
+    box-shadow: -1px 0px 3px 1px rgb(0 0 0 / 20%);
+    opacity: 0;
+    position: absolute;
+    top: 34px;
+    text-align: left;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: opacity .4s ease-in-out .2s,visibility .4s ease-in-out .2s;
+    visibility: hidden;
+    z-index: 999;
+    background-color: #fff;
+    padding: 5px 6px;
+    width: 40px;
+    border-radius: 5px;
+    left: 41px;
+}
+
+.pwr-dropdown__link {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.pwr-dropdown--phone {
+    left: 50%;
+    padding: 24px;
+    text-transform: none;
+    width: 200px;
+}
+/* .pwr-dropdown--language {
+    left: calc( 50% + 12px );
+    padding: 22px;
+    text-align: center;
+    width: 90px;
+} */
+
+
+.pwr-header-right-bar__phone .pwr-header-right-bar__link {
+    padding: 36px 0;
+}
+.pwr-header-right-bar__phone:hover .pwr-dropdown,
+.pwr-header-right-bar__language-switcher:hover .pwr-dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pwr-dropdown__link {
+    opacity: 1;
+    transition-duration: .2s;
+}
+
+a.pwr-dropdown__link:hover {
+    color: ;
+    opacity: 1;
+}
+
+.pwr--dark:not(.scroll) .pwr-dropdown__title,
+.pwr-header--dark-on-scroll.scroll .pwr-dropdown__title,
+.pwr--dark:not(.scroll) .pwr-dropdown__link,
+.pwr-header--dark-on-scroll.scroll .pwr-dropdown__link,
+.pwr--dark:not(.scroll) .pwr-dropdown__link:hover,
+.pwr-header--dark-on-scroll.scroll .pwr-dropdown__link:hover  {
+    color: ;
+}
+
+.pwr-header-right-bar__phone:hover .pwr-dropdown, .pwr-header-right-bar__language-switcher:hover .pwr-dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pwr-header-right-bar__item {
+    position: relative;
+}
+
+.c-language_switcher {
+    margin-left: 20px;
+    position: relative;
+}
+
+a.pwr-header-right-bar__link {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.pwr-header-right-bar__item:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(https://f.hubspotusercontent-eu1.net/hubfs/25290673/cropin_2021/a-blog-missing/worldwide-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    top: 1px;
+}
+
+.pwr-header-right-bar__item {
+    position: relative;
+    padding-left: 24px;
+}
+
+/***** Lang ******/
+
+.c-header_search input.hs-search-field__input {
+    border: 1px solid #b5b5b5 !important;
+    border-radius: 6px !important;
+    background-color: transparent !important;
+    font-size: 12px !important;
+    outline: 0;
+    padding: 8px 10px !important;
+    color: #212121 !important;
+}
+
+.c-header_search ul.hs-search-field__suggestions {
+    margin: 0;
+}
+
+.c-header_search {
+    padding-right: 20px;
+}
+
+
+.cropin-header__menu .hs-menu-depth-2.active.active-branch a {
+    color: #04b0fe !important;
+}
+
+.cropin-header__menu .hs-menu-depth-1.hs-item-has-children.active-branch>a {
+  color: #04b0fe;
+}
+
+.cropin-header__menu .hs-menu-depth-1.hs-item-has-children.active-branch>a:after {
+    color: #04b0fe;
+}
+
+.cropin-header__logo a img {
+    vertical-align: middle;
+    max-width: 120px;
+    height: auto;
+}
+
+.c-language_switcher .lang_switcher_class {
+    width: 140px;
+}
+
+.cropin-header__menu {
+    width: calc(100% - 200px);
+}
+
+.c-header-top_left p a {
+    color: #12a4dc;
+}
+
+.cropin-header__logo {
+    width: 120px;
+}
+
+.cropin-header__menu .hs-menu-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cropin-header {
+    padding: 8px 0px;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 10%);
+    margin-bottom: 4px;
+    position: relative;
+    z-index: 99;
+    border: 1px solid #D6D6D6;
+}
+.c-header-top_text p { color: #212121; font-size: 10px; display: inline-block; line-height: 14px; }
+.c-header-top_wrap { justify-content: space-between; }
+.c-header-top_menu ul li a { font-size: 10px; color: #212121;display: inline-block; line-height: 14px; font-weight: 500;}
+
+.cropin-header__menu ul .hs-menu-depth-1>a { font-size: 14px; }
+.cropin-header__menu ul .hs-menu-depth-1 { margin-right: 26px; padding: 10px 0px; }
+.cropin-header__menu .hs-menu-wrapper>ul { align-items: center; }
+.cropin-header__menu ul .hs-menu-depth-1:last-child { margin-right: 0; }
+
+.c-header-top { background-color: #FAFAFA; box-shadow: 0px 3px 6px #00000029; padding: 14px 0px; }
+.c-header-top_text { margin-right: 24px; }
+.c-header-top_menu ul li { padding-right: 12px; border-right: 1px solid #A0A0A0; margin-right: 12px; }
+.c-header-top_menu ul li:last-child { padding-right: 0px; border-right: 0px solid #A0A0A0; margin-right: 0px; }
+
+/*** Header CTA *****/
+
+.cropin-header__menu .hs-menu-item.hs-menu-depth-1:nth-child(6) a:nth-child(2) {
+    display: none;
+}
+
+.cropin-header__menu .hs-menu-item.hs-menu-depth-1:nth-child(6) a.cta_button {
+    padding: 8px 12px;
+    background: #fff;
+    color: #31405B;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    border: 2px solid #31405B;
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+}
+
+
+
+.cropin-header__menu .hs-menu-item.hs-menu-depth-1:nth-child(7) a:nth-child(2) {
+    display: none;
+}
+
+.cropin-header__menu .hs-menu-item.hs-menu-depth-1:nth-child(7) a.cta_button {
+    padding: 8px 12px;
+    background: #31405B;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    border: 2px solid #31405B;
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+}
+
+.c-header-top_events {
+    display: none;
+}
+
+.events-page-body .c-header-top_events {
+    display: block;
+}
+
+.events-page-body .c-header-top_wrap {
+    justify-content: space-between;
+}
+
+ .c-header-top_events p {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/*** Header CTA *****/
+
+.cropin-header__menu ul .hs-menu-depth-1.hs-item-has-children>a {
+    position: relative;
+    padding-right: 14px;
+}
+
+
+.cropin-header__menu ul li.hs-menu-item.hs-menu-depth-1 ul.hs-menu-children-wrapper a {
+    font-size: 14px;
+}
+
+.cropin-header__menu ul li.hs-menu-item.hs-menu-depth-1 ul.hs-menu-children-wrapper li {
+    margin-bottom: 8px;
+}
+ 
+.cropin-header__menu ul li.hs-menu-item.hs-menu-depth-1 ul.hs-menu-children-wrapper li.hs-menu-item.hs-menu-depth-2 {
+    padding-right: 10px;
+}
+
+
+.cropin-header__menu ul li.hs-menu-item.hs-menu-depth-1 ul.hs-menu-children-wrapper li:last-child {
+    margin: 0;
+}
+
+
+.cropin-header__menu ul li.hs-menu-item.hs-menu-depth-1 ul.hs-menu-children-wrapper a {
+    color: #6c6c6c;
+}
+
+.cropin-header__menu ul .hs-menu-depth-1.hs-item-has-children:hover>a {
+    color: #04b0fe;
+}
+
+.cropin-header__menu ul li.hs-menu-item.hs-menu-depth-1 ul.hs-menu-children-wrapper a:hover {
+    color: #04b0fe;
+}
+
+.cropin-header__menu ul .hs-menu-depth-1.hs-item-has-children:hover>a:after {
+   color: #04b0fe;
+}
+
+header.c-header-block.small .c-header-top {
+    display: none;
+}
+
+
+.cropin-header__menu .hs-menu-item.hs-menu-depth-1:nth-child(5) a.cta_button:hover {
+    color: #fff;
+    background-color: #31405b;
+}
+
+
+.cropin-header__menu .hs-menu-item.hs-menu-depth-1:nth-child(6) a.cta_button:hover {
+    background-color: #fff;
+    color: #31405b;
+}
+
+
+/***** responsive *******/
+
+@media (min-width: 991px){
+    .cropin-header__menu ul li.hs-menu-item.hs-menu-depth-1 ul.hs-menu-children-wrapper {
+         background: #FAFAFA;
+      padding: 12px;
+      border-radius: 3px;
+      box-shadow: 1px 1px 3px 2px rgb(0 0 0 / 16%);
+      text-align: left;
+  }
+  
+   .cropin-header__menu ul .hs-menu-depth-1.hs-item-has-children>a:after {
+        content: "\f107";
+        font: normal normal normal 14px/1 FontAwesome;
+        margin-left: 3px;
+        color: #000;
+        position: absolute;
+        top: 2px;
+        transition: all .3s ease-in-out;
+    } 
+  
+  
+  
+  {# .cropin-header__menu ul .hs-menu-depth-1.hs-item-has-children>a:after {
+        content: "";
+        margin-left: 3px;
+        color: #000;
+        position: absolute;
+        top: 2px;
+        transition: all .3s ease-in-out;
+        width: 9px;
+        height: 14px;
+        background-image: url(https://www.cropin.com/hubfs/cropin_2021/home/menu-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    } #}
+  
+    .cropin-header__menu ul .hs-menu-depth-1.hs-item-has-children:hover>a:after{
+       transform: rotate(180deg);
+  }
+  
+}
+
+/* ==========================================================================
+   Custom Menu Primary
+   ========================================================================== */
+
+
+{% set ulColor       = "" %} /* Set ul background color */
+{% set liColor       = "" %} /* Set li background Color */
+{% set aColor        = "" %} /* Set link Color */
+{% set aColorHover   = "" %} /* Set link Hover Color */
+
+/* Parent List */
+.custom-menu-primary .hs-menu-wrapper > ul{ 
+  background:;
+}
+.custom-menu-primary .hs-menu-wrapper > ul > li{
+  background:;
+}
+.custom-menu-primary .hs-menu-wrapper > ul > li > a{
+  color:;
+}
+.custom-menu-primary .hs-menu-wrapper > ul > li > a:hover{
+  color:;
+}
+
+/* Child List */
+.custom-menu-primary .hs-menu-wrapper > ul ul{}
+.custom-menu-primary .hs-menu-wrapper > ul ul li{
+  background:;
+}
+.custom-menu-primary .hs-menu-wrapper > ul ul li a{
+  color:;
+}
+.custom-menu-primary .hs-menu-wrapper > ul ul li a:hover{
+  color:;
+}
+
+/* Override max width on menu links */
+.custom-menu-primary .hs-menu-wrapper > ul li a, 
+.hs-menu-wrapper.hs-menu-flow-horizontal > ul li.hs-item-has-children ul.hs-menu-children-wrapper li a {
+  overflow: visible !important;
+  max-width: none !important;
+  width: auto !important;
+}
+
+/* Fix menu disappearing on desktop after toggling mobile menu */
+@media screen and (min-width:991px) {
+      .custom-menu-primary .hs-menu-wrapper { 
+          display:flex !important;
+      }
+  }
+
+
+
+
+/* ==========================================================================
+   Mobile Menu - Hubspot Standard Toggle Menu
+   ========================================================================== */
+
+
+/**
+ * Special Note
+ *
+ * When the menu is open, a class of .mobile-open is applied to the body. You can 
+ * use this for custom styling on any element when the menu is in the open position.                     
+ */
+
+.mobile-trigger, .child-trigger{
+    display: none; /* Hide button on Desktop */
+}
+
+@media (max-width: 990px){
+
+
+  /* Variables
+     ========================================================================== */
+
+  {% set menuColorMobile = "#000000" %}   /* Set Mobile Menu Background Color */
+  {% set aColorMobile = "#ffffff" %}      /* Set Link Color */
+  {% set aColorHoverMobile = "#ffffff" %} /* Set Link Hover Color */
+
+  /* 
+    * Menu Reset
+    *
+    * Remove styling from desktop version of custom-menu-primary. Place any 
+    * additional CSS you want removed from the mobile menu in this reset 
+    */
+
+  .custom-menu-primary,
+  .custom-menu-primary .hs-menu-wrapper > ul,
+  .custom-menu-primary .hs-menu-wrapper > ul li,
+  .custom-menu-primary .hs-menu-wrapper > ul li a{
+    display: block;
+    float: none;
+    position: static;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    padding: 0px;
+    margin: 0px;
+    background-image: none;
+    background-color: transparent;
+    border: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none; 
+    max-width: none;
+    width: 100%;
+    height: auto;
+    line-height: 1;  
+    font-weight: normal;
+    text-decoration: none;
+    text-indent: 0px;
+    text-align: left;
+    color:;
+  }
+
+
+  /* Toggle Button
+     ========================================================================== */
+
+  .mobile-trigger{
+    display: inline-block !important; /* Show button on mobile */
+    cursor: pointer; /* Mouse pointer type on hover */
+    position: absolute; /*******************************************/
+    top: 0px;          /* Position Button at right of screen  */
+    right: 10px;        /*******************************************/
+    width: auto; /* Button width */
+    height: auto; /* Button height */      
+    padding: 7px 10px 8px 10px;
+    background: #ffffff; /* Background color */
+    border: 1px solid ;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: ; 
+  }
+  .mobile-trigger:hover{
+    text-decoration: none; /* Removes link text underline on button */
+    color:;
+    background-color: ; 
+    border-color: #000;
+  }
+
+  /* Change button when menu is open */
+  .mobile-open .mobile-trigger{
+    color:;
+    background-color: ; 
+    border-color: #000;
+  }
+
+
+  /* Toggle Button Icon
+     ========================================================================== */
+
+  .mobile-trigger i{
+    display: inline;
+    position: relative;
+    top: -4px;
+  }
+  .mobile-trigger i:before, .mobile-trigger i:after{
+    position: absolute;
+    content: '';
+  }
+  .mobile-trigger i, .mobile-trigger i:before, .mobile-trigger i:after{
+    width: 22px; /* Icon line width */
+    height: 2px; /* Icon line height */
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    background-color: #000; /* Icon color */
+    display: inline-block;
+  }
+  .mobile-trigger i:before{
+    top: -6px; /* Position top line */
+  }
+  .mobile-trigger i:after{
+    top: 6px; /* Position bottom line */
+  }
+  
+  .mobile-trigger:hover i, .mobile-trigger:hover i:before, .mobile-trigger:hover i:after,  
+  .mobile-open .mobile-trigger i, .mobile-open .mobile-trigger i:before, .mobile-open .mobile-trigger i:after{
+      background-color: ; /* Icon color */
+  }
+
+
+  /* Child Toggle Button
+     ========================================================================== */
+
+  .child-trigger{
+    display: block !important; /* Hide button on Desktop */
+    cursor: pointer; /* Mouse pointer type on hover */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 35px !important; /* Button width */
+    min-width: 35px !important;
+    height: 35px !important; /* Button height */  
+    padding: 0 !important;
+    border-left: 1px dotted rgba(255, 255, 255, .20);
+  }
+  .child-trigger:hover{
+    text-decoration: none;
+  }
+  .child-trigger i{
+    position: relative;
+    top: 50%; /* Centers icon inside button */
+    margin: 0 auto !important;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  .child-trigger i:after{
+    position: absolute;
+    content: '';
+  }
+  .child-trigger i, .child-trigger i:after{
+    width: 10px; /* Icon line width */
+    height: 1px; /* Icon line height */
+    background-color:#000; /* Icon color */
+    display: block;
+
+  }
+  .child-trigger i:after{
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  .child-trigger.child-open i:after{
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+  .child-trigger.child-open i{
+  }
+
+    
+  /* Menu Styles on Mobile Devices
+     ========================================================================== */  
+     
+   .custom-menu-primary.js-enabled{
+       position: relative;
+       padding-top: 44px; /* Makes room for button */
+       margin: 10px 0 10px 0;
+   }
+
+  /* Hide menu on mobile */
+  .custom-menu-primary .hs-menu-wrapper,
+  .custom-menu-primary .hs-menu-children-wrapper{
+    display: none;
+  }  
+
+  /* Make child lists appear below parent items */
+  .custom-menu-primary ul.hs-menu-children-wrapper{
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: static !important;
+    display: none;
+  }
+
+  /* Mobile Menu Styles */ 
+  .custom-menu-primary.js-enabled .hs-menu-wrapper{
+    width: 100%;
+    position: relative; /**************************************************************/
+    top: 0;             /* Positions the menu to drop from the very top of the screen */
+    left: 0;          /**************************************************************/
+    padding: 0;
+  }
+  .custom-menu-primary .hs-menu-wrapper{
+    background-color:; /* Menu background color set off global menuColorMobile variable */
+    width: 100%; /* Full screen width */
+  }
+
+   /* Level 1 Menu List Styles */
+  .custom-menu-primary .hs-menu-wrapper > ul > li{
+    position: relative;
+  }
+  .custom-menu-primary .hs-menu-wrapper > ul > li a{
+    overflow: visible;
+  }
+
+  /* Level 1 and Higher Menu List Styles */
+  .custom-menu-primary .hs-menu-wrapper > ul li{
+    border-top: 1px dotted rgba(255, 255, 255, .35); /* Adds transparent dark highlights to top of top level list items */
+  }
+  .custom-menu-primary .hs-menu-wrapper >  ul li a{
+    padding: 0 10px;
+    color:; /* link color set by global mobile-aColor variable */
+  }
+  .custom-menu-primary .hs-menu-wrapper > ul li a:hover{
+    color:; /* link hover color set by global mobile-aColorHover variable */
+  }
+
+  /* Level 2 and Higher Menu List Styles */
+  .custom-menu-primary .hs-menu-wrapper > ul ul li{
+    background-color: rgba(255, 255, 255, .08);
+  }
+  .custom-menu-primary .hs-menu-wrapper > ul ul li a{
+    text-indent: 10px; /* Indent Child lists */
+    font-size: 16px; /* Font size of child lists */
+  }
+
+  /* Level 3 and Higher Menu List Styles */
+  .custom-menu-primary .hs-menu-wrapper > ul ul ul li a{
+    text-indent: 30px; /* Indent Child lists */
+  }
+  .custom-menu-primary .hs-menu-wrapper > ul ul ul ul li a{
+    text-indent: 50px; /* Indent Child lists */
+  }
+}
+
+/**** Mobile Menu ******/
+
+/*********** Responsive code ***************/
+
+/************** ipad ***************/
+@media (max-width: 990px) {
+  .cropin-header__menu .mobile-trigger { top: -45px; }
+  .cropin-header__menu.custom-menu-primary { padding-top: 0px; margin: 0; width: 100%; }
+  .custom-menu-primary.cropin-header__menu ul .hs-menu-depth-1 { padding-bottom: 20px !important; }
+  .cropin-header__menu ul .hs-menu-depth-1>a { font-size: 16px; }
+  .cropin-header__menu ul li.hs-menu-item.hs-menu-depth-1 ul.hs-menu-children-wrapper { padding-top: 14px; }
+  .cropin-header__menu ul li.hs-menu-item.hs-menu-depth-1 ul.hs-menu-children-wrapper li { margin-bottom: 15px; }
+
+  .cropin-header__menu .hs-menu-wrapper.flyouts {
+      padding-top: 10px !important;
+  }
+  
+  .cropin-header__menu .hs-menu-item.hs-menu-depth-1:nth-child(5) a.cta_button {
+      max-width: 130px !important;
+      width: 100% !important;
+      text-align: center;
+      font-size: 14px;
+      padding: 10px 12px;
+      border-radius: 5px !important;
+  }
+  
+  .cropin-header__menu .hs-menu-item.hs-menu-depth-1:nth-child(6) a.cta_button {
+      max-width: 130px !important;
+      width: 100% !important;
+      text-align: center;
+      font-size: 14px;
+      padding: 10px 12px;
+      border-radius: 5px !important;
+  }
+  
+  
+}
+
+
+
+@media (min-width: 768px) {
+
+  .c-header-block.small {
+      position: fixed;
+      width: 100%;
+      z-index: 99;
+      top: 0;
+      left: 0;
+  }
+
+}
+
+
+/************** ipad nd tab ***************/
+@media only screen and (min-width:768px) and (max-width: 1024px) {}
+
+/************** iphone roatate***************/
+@media (max-width: 767px) {
+  .c-header-top_menu ul { flex-direction: row !important; }
+  .c-header-top_events {
+      width: 100%;
+      padding-bottom: 10px;
+  }
+  
+  
+}
+
+/************** iphone ***************/
+@media (max-width: 479px) {
+
+  .pwr-dropdown {
+      left: 27px;
+  }
+
+  .c-header-top_text {
+      margin-right: 10px;
+  }
+  
+
+  .cropin-header__logo a img {
+      vertical-align: middle;
+      max-width: 100px;
+      height: auto;
+    }
+  .cropin-header__menu .mobile-trigger {
+      top: -41px;
+  }
+
+  
+  .c-header-top_box {
+      display: none;
+  }
+
+  .c-header-top {
+      display: none;
+  }
+
+}
+
+@media (max-width: 380px) {
+
+  
+  .c-language_switcher {
+      margin-left: 20px;
+      position: relative;
+      margin-top: 14px;
+  }
+  
+}
