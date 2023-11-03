@@ -4,8 +4,7 @@
     font-size: large;
 }
 .founder{
-    padding-left: 0px;
-    margin-left: 0px;
+    margin-left: 20px;
 }
 .b_text{
     font-size: larger;
@@ -14,10 +13,6 @@
 }
 .home{
     margin-top: 100px;
-}
-.contacts{
-    justify-content: center;
-    text-align: center;
 }
 
 a:hover{
@@ -114,6 +109,7 @@ a:hover{
 body{
     font-family: 'Times New Roman', Times, serif;
 }
+/*
 textarea{
     text-align: center;
     background-color: bisque;
@@ -159,20 +155,6 @@ button:hover{
     width: 100px;
     margin-left: 10px;
 }
-.hidden{
-    border: 2px solid transparent;
-    height: 220px;
-    width: 200px;
-    position: relative;
-    background-color: white;
-    color: black;
-    top: 0px;
-    margin-left: 500px;
-    border-radius: 10px;
-    float: right;
-    visibility: hidden;
-    margin-bottom: 100px;
-}
 .hidden li{
     padding: 20px 20px;
     text-align:left;
@@ -185,4 +167,4 @@ table,tr,th{
 }
 table{
     margin-left: 300px;
-}
+} */
