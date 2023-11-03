@@ -10,6 +10,11 @@
 form{
     font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
+    text-align: left;
+}
+
+form input{
+    display:table-column;
 }
 
 .row{
