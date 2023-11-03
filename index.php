@@ -13,8 +13,8 @@
          <img style="width: 70px;height:50px" src="pictures/logo.jpeg" alt="logo image">
         </div>
         <div class="access">
-          <h1><a href="">Sign up</a></h1>
-          <h1><a href="">Log in</a></h1>
+          <h1><a href="signUp.php">Sign up</a></h1>
+          <h1><a href="login.php">Log in</a></h1>
         </div>
       </div>
       <div class="menu">
