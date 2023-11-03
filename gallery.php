@@ -4,8 +4,34 @@
     <title>gallery</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="CSS/galleryStyles.css" />
+    <link rel="stylesheet" href="CSS/indexStyles.css">
   </head>
   <body style="background-color: white;">
+  <div class="container">
+      <div class="header">
+        <div class="logo">
+         <img style="width: 70px;height:50px" src="pictures/logo.jpeg" alt="logo image">
+        </div>
+        <div class="access">
+          <h1><a href="">Sign up</a></h1>
+          <h1><a href="">Log in</a></h1>
+        </div>
+      </div>
+      <div class="menu">
+      <div class="log-text">
+          <h2>MOD-AGRI</h2>
+      </div>
+        <div class="links">
+            <ul>
+              <li><a href="about.php">About Us</a></li>
+              <li><a href="partners.php">Our Partners</a></li>
+              <li><a style="text-decoration: underline; color:white" href="#">Gallery</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div style="margin-bottom: 150px;"></div>
     <div>
       <div class="head">
         <div>
@@ -13,7 +39,7 @@
             Below are Some of Our pictures
           </h1>
         </div>
-        <div>
+        <div class="home">
           <h3 style="font-size: xx-large;">
             Go Back
             <a style="color:#8FBC8B" href="index.php">home</a>
@@ -208,6 +234,7 @@
                <h3 style="text-decoration: underline;padding-bottom: 1px;text-align: center">Quick Links</h3>
                <p> <a href="about.php">About Us</a> 
                <p> <a href="partners.php">Our Partners</a> 
+               <p> <a href="index.php">Home</a> 
           </div>
           
       </div>
