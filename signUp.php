@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
+    <link rel="stylesheet" href="CSS/signingStyles.css">
 </head>
 <body>
-    <div>
+    <div class="signUp">
         <h1>Please sign Up here!</h1>
         <div>
             <form action="">
