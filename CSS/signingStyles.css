@@ -1,23 +1,117 @@
 
+.whole-page{
+    display: flex;
+}
+
+#logo{
+    position: fixed;
+    top: 0;
+}
+
 .signUp{
     text-align: center;
     border: 2px solid black;
     border-radius: 10px;
-    width: 500px;
-    margin: auto;
+    width: 650px;
+    margin: auto auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.log-home{
+    margin-top: 100px;
+    margin-left: 250px;
+    margin: 100px auto;
+}
+.sign-home{
+    margin: auto auto;
+}
+
+.login{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 520px;
+    margin: auto auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ .log-text::first-letter{
+    font-size: 50px;
+    font-weight:900;
+} 
+
+ .log-text:hover{
+    cursor: pointer;
+}
+.log-text{
+    margin: 0;
+    padding-top: 0;
+}
+ #heading1{
+    font-size: 40px;
+    color: #8FBC8B;
+    text-decoration: underline;
+}
+#heading1:hover{
+    cursor: pointer;
 }
 
 form{
     font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
     text-align: left;
-}
+    padding: 0 20px;
 
-form input{
-    display:table-column;
 }
 
 .row{
-    padding: 10px;
-    margin: 8px;
+    padding: 5px;
+    margin-top: 5px;
 }
+#special-row{
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.buttons{
+    text-align: center;
+    margin: 10px;
+}
+
+button{
+    font-size: xx-large;
+    background-color: #8FBC8B; 
+    border-radius: 8px;
+}
+button:hover{
+    opacity: 0.8;
+}
+.row input{
+    font-size: x-large;
+}
+.row #password{
+    width: 420px;
+}
+select{
+    font-size: x-large;
+}
+.home{
+    text-align: center;
+    margin: auto auto;
+}
+.home a{
+    text-decoration: none;
+    color: #8FBC8B;
+}
+ a:hover{
+    color: black;
+}
+ .row label{
+    font-weight: bold;
+}
+.required{
+    color: red;
+    font-size: large;
+}
+
