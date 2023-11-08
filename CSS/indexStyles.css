@@ -129,7 +129,7 @@
     text-align: center;
     color: black;
     padding: 10px 0;
-    width: 283px;
+    width: 230px;
     height: 50px;
     position: fixed;
     background-color: #A9BA9D;
@@ -161,6 +161,7 @@
     position: relative;
     margin-left: 3px;
     height:1000px;
+    width: 100%;
     margin-top: 130px;
 }
 .content .sideBar .category{
@@ -196,6 +197,52 @@ cursor: pointer;
 .content .sideBar .category:hover{
     text-decoration: underline;
 }
+
+.explore {
+    text-decoration: none;
+    font-size: large;
+}
+
+
+.foot{
+    display: flex;
+    padding: 1px 1px ;  
+    justify-content: center;
+    font-size: medium;
+    font-weight: bold;
+}
+.contact{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: left;
+    font-size: medium;
+}
+.qlinks a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+.qlinks a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.footer{
+    margin: 0px; 
+    border-top: 2px solid;
+    background-color:#8FBC8B;
+    color:black;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 1000px;
+}
+.rights{
+    font-size: larger;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+
 /*
 .content .sideBar .subCategory ::marker{
     content: "-->";
