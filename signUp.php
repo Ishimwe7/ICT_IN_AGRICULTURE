@@ -20,7 +20,7 @@
         <div class="signUp">
             <h1 id="heading1">Please sign Up here!</h1>
             <div>
-                <form action="" method="post">
+                <form action="insert.php" method="POST">
                     <div class="row">
                         <label for="fname">First Name:</label>
                         <input required type="text" id="fname" placeholder="Enter your first name..." name="firstName">
@@ -51,15 +51,15 @@
                             <option value="south" id="south">South</option>
                             <option value="kigali" id="kigali">Kigali City</option>
                         </select> -->
-                        <input type="radio" id="east" checked value="East" name="radioButton">
+                        <input type="radio" id="east" checked value="East" name="province">
                         <label for="east">East</label>
-                        <input type="radio" id="west" value="West" name="radioButton">
+                        <input type="radio" id="west" value="West" name="province">
                         <label for="west">West</label>
-                        <input type="radio" id="north" value="North" name="radioButton">
+                        <input type="radio" id="north" value="North" name="province">
                         <label for="north">North</label>
-                        <input type="radio" id="south" value="South" name="radioButton">
+                        <input type="radio" id="south" value="South" name="province">
                         <label for="south">South</label>
-                        <input type="radio" id="kigali" value="Kigali City" name="radioButton">
+                        <input type="radio" id="kigali" value="Kigali City" name="province">
                         <label for="kigali">Kigali City</label>
                     </div>
                     <div class="row">
@@ -97,18 +97,18 @@
                     </div>
                     <div class="row">
                         <label for="password">Password:</label>
-                        <input type="password" id="password" placeholder="Password(Between 8 and 10 chars)..." name="password">
+                        <input type="password" maxlength="10" id="password" placeholder="Password(Between 8 and 10 chars)..." name="password">
                         <label class="required">*</label>
                         <label id="pass-required"></label>
                     </div>
                     <div class="row">
                         <label for="confirm-password">Confirm Password:</label>
-                        <input type="password" id="confirm-password" placeholder="Confirm your password..." name="confirm-password">
+                        <input type="password" maxlength="10" id="confirm-password" placeholder="Confirm your password..." name="confirm-password">
                         <label class="required">*</label>
                         <label id="mismatches"></label>
                     </div>
                     <div class="buttons">
-                        <button id="submitButton" type="submit">Submit</button>
+                        <button id="submitButton" value="Register" type="submit">Submit</button>
                         <button id="resetButton" type="reset">Clear</button>
                     </div>
                 </form>
