@@ -26,7 +26,7 @@
               <li><a href="about.php">About Us</a></li>
               <li><a href="partners.php">Our Partners</a></li>
               <li><a href="gallery.php">Gallery</a></li>
-              <li><a href="">Contact Us</a></li>
+              <li><a href="contacts.php">Contact Us</a></li>
             </ul>
         </div>
       </div>
@@ -86,7 +86,52 @@
       </div>
       <div class="other">
        <div id="index-content">
-       <h1>sdfghj ghjhgfdfghj</h1>
+       <p>
+        <h1 style="margin:10px;padding:10px"><marquee behavior="" direction="">Welcome to MOD-AGRI(Modernized Agriculture) Company Ltd's Website.</marquee></h1>
+        <h2>Are you looking for agricultural consultancy and information? We are here to serve you.</h2>
+        <div class="intro" style="display:flex;margin:10px;margin-top:20px;padding:10px">
+          <img style="border-radius: 10px;width: 40%;height: 250px;margin:0px;margin-right:20px" src="pictures/fruits_vegetables/mumurima.jpeg" alt="image 1">
+         <p style="font-size:x-large"> Certainly! The core industry of our company revolves around crop cultivation, livestock management,
+           and sustainable farming practices. Success in modern agriculture hinges on the use of technology. It involves leveraging tools, machinery,
+            and digital solutions to optimize processes.
+         <strong>High-yielding seeds</strong>, <strong>precision irrigation</strong>, and <strong>smart farming practices</strong> are examples of technological advancements.It emphasizes efficient resource utilization. 
+         This includes managing water, land, and energy effectively.</p>
+        </div>
+        <div class="intro" style="display:flex;margin:10px;margin-top:20px;padding:10px">
+        <p style="font-size:x-large"> Irrigation practices play a crucial role in crop development, and fertilizers enhance productivity.
+        Modern farmers consider market dynamics. They produce crops and livestock based on consumer demand and economic viability.
+        Market intelligence guides decisions related to crop selection and production.
+        Government policies impact modern agriculture. Supportive regulations, subsidies, and research funding contribute to its success.
+        Sustainable practices are often encouraged through government initiatives.
+       Meeting the global food demand is a significant challenge. 
+       Developed countries require twice as much agricultural output by 2050.
+        Balancing productivity with environmental sustainability is essential.
+      </p>
+          <img style="border-radius: 10px;width: 40%;height: 250px;margin:0px;margin-right:20px" src="pictures/permanentCrops/avoka.jpeg" alt="image 2">
+        </div>
+        <div class="intro" style="display:flex;margin:10px;margin-top:20px;padding:10px">
+          <img style="border-radius: 10px;width: 40%;height: 250px;margin:0px;margin-right:20px" src="pictures/apiculture/imag1.jpeg" alt="image 1">
+         <p style="font-size:x-large"> Agriculture accounts for 70% of human freshwater consumption. Heavy irrigation depletes aquifers, river systems, and downstream groundwater. It can lead to waterlogging and soil salinization.
+        Agricultural expansion often leads to deforestation, destroying habitats and biodiversity. For example, oil palm cultivation displaces forests in Indonesia, and soy production harms the Cerrado and Atlantic Forests in Brazil and Paraguay12.
+        </p>
+        </div>
+        <p style="font-size:x-large">
+        The use of pesticides and synthetic fertilizers can contaminate soil, water, and air. Runoff from fields can harm aquatic ecosystems.
+       Intensive farming practices can degrade soil quality, affecting its structure, fertility, and ability to retain water.
+        Greenhouse Gas Emissions: Agricultural activities contribute to greenhouse gas emissions (e.g., methane from livestock and nitrous oxide from fertilizers).
+       Loss of Biodiversity: Monoculture and intensive farming reduce biodiversity by favoring specific crops or livestock breeds.
+     Converting natural ecosystems into farmland disrupts local ecosystems and reduces habitat availability.
+
+       </p>
+
+        <div class="intro" style="display:flex;margin:10px;margin-top:20px;padding:10px">
+         <p style="font-size:x-large">  On the other hand! <strong>Carbon Sequestration</strong>: Certain agricultural practices (e.g., cover cropping, agroforestry) can trap greenhouse gases within crops and soils.
+<stro>Flood Mitigation</stro>: Proper farming practices (e.g., contour farming, buffer strips) can reduce flood risks.
+<strong>Habitat Creation</strong>: Some agricultural landscapes provide habitats for wildlife.
+<strong>Crop Rotation</strong>: Rotating crops helps maintain soil health and prevents nutrient depletion.
+<strong>Agroecology</strong>: Sustainable practices integrate ecological principles into farming systems..</p>
+<img style="border-radius: 10px;width: 40%;height: 250px;margin:0px;margin-right:20px" src="pictures/permanentCrops/image1.jpeg" alt="image 1">
+        </div>
        </div>
         <div class="footer" style="margin-top: 150px;">
       <div class="foot">

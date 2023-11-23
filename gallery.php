@@ -13,8 +13,8 @@
          <img style="width: 70px;height:50px" src="pictures/logo.jpeg" alt="logo image">
         </div>
         <div class="access">
-          <h1><a href="">Sign up</a></h1>
-          <h1><a href="">Log in</a></h1>
+          <h1><a href="signUp.php">Sign up</a></h1>
+          <h1><a href="login.php">Log in</a></h1>
         </div>
       </div>
       <div class="menu">
@@ -35,7 +35,7 @@
     <div class="head">
         <div>
           <h1 style="text-align: center">
-            Below are Some of Our pictures
+            Below are Some of the pictures you would like to see!
           </h1>
         </div>
         <div class="home">
@@ -52,8 +52,8 @@
             src="pictures/back2.jpg"
             alt="Photo"
           />
-          <div class="title">Our Engineers</div>
-          <div class="description">Our Fellow Engineers</div>
+          <div class="title">Wetland</div>
+          <div class="description">Rice planted in a wetland</div>
         </div>
         <div class="gal">
           <img
@@ -61,9 +61,9 @@
             src="pictures/abahinzi.jpeg"
             alt="Photo"
           />
-          <div class="title">Our Director General</div>
+          <div class="title">Field Farming</div>
           <div class="description">
-            Enjoying the holidays at Bugesera lake hotel
+            Farms taking care of their crops
           </div>
         </div>
         <div class="gal">
@@ -72,8 +72,8 @@
             src="pictures/background.jpg"
             alt="Photo"
           />
-          <div class="title">Moon</div>
-          <div class="description">Evening moon light</div>
+          <div class="title">Crop image</div>
+          <div class="description">Crop image at the moon light</div>
         </div>
         <div class="gal">
           <img
@@ -81,8 +81,8 @@
             src="pictures/agriPractice1.jpg"
             alt="Photo"
           />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
+          <div class="title">Field Research</div>
+          <div class="description">Our researchers</div>
         </div>
         <div class="gal">
           <img
@@ -90,17 +90,8 @@
             src="pictures/amashu.jpg"
             alt="Photo"
           />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
-        </div>
-        <div class="gal">
-          <img
-            class="image"
-            src="pictures/abahinzi.jpeg"
-            alt="Photo"
-          />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
+          <div class="title">Cabbages</div>
+          <div class="description">Cabbages one of the vegetables we cultivate</div>
         </div>
         <div class="gal">
           <img
@@ -108,8 +99,8 @@
             src="pictures/caterpilla.jpeg"
             alt="Photo"
           />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
+          <div class="title">Our Machines</div>
+          <div class="description">Our Machines on job. Very fast and efficient ones.</div>
         </div>
         <div class="gal">
           <img
@@ -117,8 +108,8 @@
             src="pictures/fruits.jpg"
             alt="Photo"
           />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
+          <div class="title">Vegetables</div>
+          <div class="description">Carrots,tomatoes,and grassroots</div>
         </div>
         <div class="gal">
           <img
@@ -126,8 +117,8 @@
             src="pictures/greenhouse.jpg"
             alt="Photo"
           />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
+          <div class="title">Advanced Technology</div>
+          <div class="description">Look at our very our modern technology</div>
         </div>
         <div class="gal">
           <img
@@ -135,17 +126,8 @@
             src="pictures/guhinga.jpg"
             alt="Photo"
           />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
-        </div>
-        <div class="gal">
-          <img
-            class="image"
-            src="pictures/guhinga2.jpg"
-            alt="Photo"
-          />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
+          <div class="title">Planting</div>
+          <div class="description">Seeds planting to grow plant</div>
         </div>
         <div class="gal">
           <img
@@ -153,8 +135,8 @@
             src="pictures/ikibaya.jpg"
             alt="Photo"
           />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
+          <div class="title">Mountains</div>
+          <div class="description">Beauty of our nature</div>
         </div>
         <div class="gal">
           <img
@@ -162,8 +144,8 @@
             src="pictures/imashini.jpg"
             alt="Photo"
           />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
+          <div class="title">Digging machines</div>
+          <div class="description">Our Digging machines at work</div>
         </div>
         <div class="gal">
           <img
@@ -171,8 +153,8 @@
             src="pictures/ingano.jpg"
             alt="Photo"
           />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
+          <div class="title">Grassland</div>
+          <div class="description">Where some permanent crops can be planted</div>
         </div>
         <div class="gal">
           <img
@@ -180,8 +162,8 @@
             src="pictures/ingemwe.jpg"
             alt="Photo"
           />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
+          <div class="title">New Plant</div>
+          <div class="description">To be grown in a plot</div>
         </div>
         <div class="gal">
           <img
@@ -189,8 +171,8 @@
             src="pictures/inka.jpg"
             alt="Photo"
           />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
+          <div class="title">Cows</div>
+          <div class="description">Our beauty cows with hihger milk production</div>
         </div>
         <div class="gal">
           <img
@@ -198,8 +180,8 @@
             src="pictures/tea1.jpeg"
             alt="Photo"
           />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
+          <div class="title">Tea plantation</div>
+          <div class="description">It is done especially in hihger mountains</div>
         </div>
         <div class="gal">
           <img
@@ -207,8 +189,8 @@
             src="pictures/umuhinzi2.jpg"
             alt="Photo"
           />
-          <div class="title">The Sky</div>
-          <div class="description">Our favorite sky look</div>
+          <div class="title">Plain plants</div>
+          <div class="description">For new prepared plot</div>
         </div>
     
       </div>

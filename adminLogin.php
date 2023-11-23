@@ -1,35 +1,3 @@
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "ict_in_agriculture";
-$conn = mysqli_connect($servername, $username, $password, $database);
-if (!$conn) {
-    die("Error: " . mysqli_connect_error());
-} 
-if(isset($_POST["login"])){
-if(!isset($_POST['email'],$_POST['password'])){
-    exit('Empty filed(s)');
-} 
-if(empty($_POST['email'])||empty($_POST['$password'])){
-    exit('There is Empty Value(s)');
-} 
-if($stmt = $conn->prepare('select email from system_sers where email=?')){
-   $stmt->bind_param('s',$_POST['email']);
-   $stmt->execute();
-   $stmt->store_result();
-   if($stmt->num_rows>0){
-    echo 'Welcome!';
-   }
-   else{
-    echo 'Invalid Login';
-   }
-}else{
-    echo 'An error occurred!';
-}
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +21,7 @@ if($stmt = $conn->prepare('select email from system_sers where email=?')){
             <div style="margin-top:50px"></div>
             <h1 id="heading1">Please Login here!</h1>
             <div>
-                <form action="" method="post">
+                <form action="" method="POST">
                     <div class="row">
                         <label for="email">Email:</label>
                         <input type="email" id="email" required placeholder="Enter your email..." name="email">
@@ -62,20 +30,20 @@ if($stmt = $conn->prepare('select email from system_sers where email=?')){
                     </div>
                     <div class="row">
                         <label for="email">Password:</label>
-                        <input type="password" id="password" required placeholder="Enter your password here..." name="password">
+                        <input type="password" id="email" required placeholder="Enter your password here..." name="password">
                         <label class="required">*</label>
                          <br>
                     </div>
                     <div class="buttons">
-                        <button id="login" name="login">Login</button>
+                        <button id="log-in-button" name="login" type="submit">Login</button>
                     </div>
                 </form>
             </div>
         </div>
     <div class="home">
-          <h3 style="font-size: x-large;">Don't have an account? <a href="signUp.php">SignUp here!</a><br><br>
+          <h3 style="font-size: xx-large;"><br>
             
-            Go Back
+            Go to
             <a href="index.php">home</a>
           </h3>
         </div>

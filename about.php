@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>about me</title>
+    <title>about us</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="CSS/aboutStyles.css" />
     <link rel="stylesheet" href="CSS/indexStyles.css">
@@ -20,8 +20,8 @@
          <img style="width: 70px;height:50px" src="pictures/logo.jpeg" alt="logo image">
         </div>
         <div class="access">
-          <h1><a href="">Sign up</a></h1>
-          <h1><a href="">Log in</a></h1>
+          <h1><a href="signUp.php">Sign up</a></h1>
+          <h1><a href="login.php">Log in</a></h1>
         </div>
       </div>
       <div class="menu">
@@ -33,7 +33,7 @@
               <li><a style="text-decoration: underline; color:white" href="#">About Us</a></li>
               <li><a href="partners.php">Our Partners</a></li>
               <li><a href="gallery.php">Gallery</a></li>
-              <li><a href="">Contact Us</a></li>
+              <li><a href="contacts.php">Contact Us</a></li>
             </ul>
         </div>
       </div>
@@ -66,6 +66,14 @@
           2. We should help the community to adapt on nowadays agricultural technology through
           community reach out. <br />
         </p>
+        <h2 class="titles" style="color:#8FBC8B">Vision</h2>
+        <p>
+        We promote local production of agricultural and specialty products and offer opportunities
+         for producers to enhance their marketing skills. We strive to improve the variety, taste, 
+         and freshness of products available to customers in our area.
+        </p>
+        <h2 class="titles" style="color:#8FBC8B">Mission</h2>
+        <p>To provide all relevant agricultural information and make it universally accessible and useful.</p>
         <h3 style="text-align: center" class="home">
           Go Back <a style="color:#8FBC8B" href="index.php">Home</a>
         </h3>

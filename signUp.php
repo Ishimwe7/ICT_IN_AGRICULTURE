@@ -1,3 +1,56 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "ict_in_agriculture";
+$conn = mysqli_connect($servername, $username, $password, $database);
+if (!$conn) {
+    die("Error: " . mysqli_connect_error());
+} 
+if(isset($_POST["Register"])){
+if(!isset($_POST['fname'],$_POST['lname'],$_POST['email'],$_POST['province'],$_POST['district'],$_POST['address'],$_POST['$specialization'],$_POST['$password'],$_POST['confirm-password'])){
+    echo $_POST['password'];
+    echo $_POST['fname'];
+    echo  $_POST['lname'];
+    echo  $_POST['email'];
+    echo  $_POST['address'];
+    echo $_POST['province'];
+    echo $_POST['district'];
+    echo $_POST['specialization'];
+    echo $_POST['confirm-password'];
+    exit('Empty filed(s)');
+} 
+if(empty($_POST['fname']) || empty($_POST['lname'])||empty($_POST['email'])||empty($_POST['province'])||empty($_POST['district'])||empty($_POST['address'])||empty($_POST['$specialization'])||empty($_POST['$password'])||empty($_POST['confirm-password'])){
+    exit('There is Empty Value(s)');
+} 
+if($stmt = $conn->prepare('select email from system_sers where email=?')){
+   $stmt->bind_param('s',$_POST['email']);
+   $stmt->execute();
+   $stmt->store_result();
+   if($stmt->num_rows>0){
+    echo 'User Already Exists!';
+   }
+   else{
+       if($stmt = $conn->prepare('INSERT INTO system_sers(fname, lname, email, province, district, address, specialization, password) values(?,?,?,?,?,?,?,?)')) {
+        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $stmt->bind_param('ssssssss',$_POST['fname'],$_POST['lname'],$_POST['email'],$_POST['province'],$_POST['district'],$_POST['address'],$_POST['$specialization'],$password);
+        $stmt->execute();
+        echo 'Successfully Registered!!';
+       }
+       else{
+        echo 'An expected Error occurred!';
+       }
+    } 
+    $stmt->close();
+   }
+   else{
+    echo 'An Error Occurred!';
+   }
+   $conn->close();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,17 +73,17 @@
         <div class="signUp">
             <h1 id="heading1">Please sign Up here!</h1>
             <div>
-                <form action="insert.php" method="POST">
+                <form action="" method="POST">
                     <div class="row">
                         <label for="fname">First Name:</label>
-                        <input required type="text" id="fname" placeholder="Enter your first name..." name="firstName">
+                        <input required type="text" id="fname" placeholder="Enter your first name..." name="fname">
                         <label class="required">*</label>
                         <label id="fname-required"></label>
                         <br>
                     </div>
                     <div class="row">
                         <label for="lname">Last Name:</label>
-                        <input required type="text" id="lname" placeholder="Enter your last name..." name="lastName">
+                        <input required type="text" id="lname" placeholder="Enter your last name..." name="lname">
                         <label class="required">*</label>
                         <label id="lname-required"></label>
                         <br>
@@ -66,14 +119,14 @@
                         <label for="district">District:</label>
                         <select name="district" id="district">
                         <label class="required">*</label>
-                            <option value="dis1" id="dis1">Bugesera</option>
-                            <option value="dis2" id="dis2">Gatsibo</option>
-                            <option value="dis3" id="dis3">Kayonza</option>
-                            <option value="dis4" id="dis4">Kirehe</option>
-                            <option value="dis5" id="dis5">Ngoma</option>
-                            <option value="dis6" id="dis6">Nyagatare</option>
-                            <option value="dis7" id="dis7">Rwamagana</option>
-                            <option value="dis8" id="dis8"></option>
+                            <option name="district" id="dis1">Bugesera</option>
+                            <option name="district" id="dis2">Gatsibo</option>
+                            <option name="district" id="dis3">Kayonza</option>
+                            <option name="district" id="dis4">Kirehe</option>
+                            <option name="district" id="dis5">Ngoma</option>
+                            <option name="district" id="dis6">Nyagatare</option>
+                            <option name="district" id="dis7">Rwamagana</option>
+                            <option name="district" id="dis8"></option>
                         </select>
                     </div>
                     <div class="row">
@@ -85,14 +138,14 @@
                     <div class="row">
                         <label for="specialization">Specialization:</label>
                         <select name="specialization" id="specialization">
-                            <option value="aquaculture">Aquaculture</option>
-                            <option value="animalHusbandry">Animal Husbandry</option>
-                            <option value="dairyFarming">Dairy Farming</option>
-                            <option value="apiculture">Apiculture</option>
-                            <option value="agroforestry">Agroforestry</option>
-                            <option value="poultry">Poultry</option>
-                            <option value="permanentCrops">Permanent Crops</option>
-                            <option value="fruits_Vegetables">Fruits and Vegetables</option>
+                            <option name="specialization" value="aquaculture">Aquaculture</option>
+                            <option name="specialization" value="animalHusbandry">Animal Husbandry</option>
+                            <option name="specialization" value="dairyFarming">Dairy Farming</option>
+                            <option name="specialization" value="apiculture">Apiculture</option>
+                            <option name="specialization" value="agroforestry">Agroforestry</option>
+                            <option name="specialization" value="poultry">Poultry</option>
+                            <option name="specialization" value="permanentCrops">Permanent Crops</option>
+                            <option name="specialization" value="fruits_Vegetables">Fruits and Vegetables</option>
                         </select>
                     </div>
                     <div class="row">
@@ -108,7 +161,7 @@
                         <label id="mismatches"></label>
                     </div>
                     <div class="buttons">
-                        <button id="submitButton" value="Register" type="submit">Submit</button>
+                        <button id="submitButton" name="Register" type="submit">Submit</button>
                         <button id="resetButton" type="reset">Clear</button>
                     </div>
                 </form>
