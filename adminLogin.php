@@ -1,3 +1,50 @@
+<?php
+
+session_start();
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "ict_in_agriculture";
+$conn = mysqli_connect($servername, $username, $password, $database);
+if (!$conn) {
+    die("Error: " . mysqli_connect_error());
+} 
+if(isset($_POST["login"])){
+if(!isset($_POST['email'],$_POST['password'])){
+    exit('Empty filed(s)');
+} 
+if(empty($_POST['email'])||empty($_POST['password'])){
+    exit('There is Empty Value(s)');
+} 
+if($stmt = $conn->prepare('select password from admins where email=?')){
+   $stmt->bind_param('s',$_POST['email']);
+   $stmt->execute();
+   $stmt->store_result();
+   if($stmt->num_rows>0){
+    $stmt->bind_result($password);
+    $stmt->fetch();
+    //if(password_verify($_POST['password'], $password)){
+    //echo 'Welcome!';
+    header("Location: adminPanel.php");
+    $_SESSION['loggedin'] = true;
+    $_SESSION['email'] = $_POST['email'];
+  // }
+   //else{
+   // header("Location: invalidLoginAdmin.php");
+   // echo 'Invalid Login';
+  // }
+}
+else{
+    header("Location: invalidLoginAdmin.php");
+   // echo 'Invalid Login';
+   }
+}else{
+    echo 'An error occurred!';
+}
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +91,7 @@
           <h3 style="font-size: xx-large;"><br>
             
             Go to
-            <a href="index.php">home</a>
+            <a href="adminPanel.php">Panel</a>
           </h3>
         </div>
         </div>
