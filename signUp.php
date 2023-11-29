@@ -2,14 +2,15 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
+$message="Registration failled !!";
 $database = "ict_in_agriculture";
 $conn = mysqli_connect($servername, $username, $password, $database);
 if (!$conn) {
     die("Error: " . mysqli_connect_error());
 } 
 if(isset($_POST["Register"])){
-if(!isset($_POST['fname'],$_POST['lname'],$_POST['email'],$_POST['province'],$_POST['district'],$_POST['address'],$_POST['$specialization'],$_POST['$password'],$_POST['confirm-password'])){
-    echo $_POST['password'];
+if(!isset($_POST['fname'],$_POST['lname'],$_POST['email'],$_POST['province'],$_POST['district'],$_POST['address'],$_POST['specialization'],$_POST['password'],$_POST['confirm-password'])){
+   /* echo $_POST['password'];
     echo $_POST['fname'];
     echo  $_POST['lname'];
     echo  $_POST['email'];
@@ -17,34 +18,45 @@ if(!isset($_POST['fname'],$_POST['lname'],$_POST['email'],$_POST['province'],$_P
     echo $_POST['province'];
     echo $_POST['district'];
     echo $_POST['specialization'];
-    echo $_POST['confirm-password'];
-    exit('Empty filed(s)');
+    echo $_POST['confirm-password']; */
+    $message='Empty filed(s)';
+    exit();
 } 
-if(empty($_POST['fname']) || empty($_POST['lname'])||empty($_POST['email'])||empty($_POST['province'])||empty($_POST['district'])||empty($_POST['address'])||empty($_POST['$specialization'])||empty($_POST['$password'])||empty($_POST['confirm-password'])){
-    exit('There is Empty Value(s)');
+if(empty($_POST['fname']) || empty($_POST['lname'])||empty($_POST['email'])||empty($_POST['province'])||empty($_POST['district'])||empty($_POST['address'])||empty($_POST['specialization'])||empty($_POST['password'])||empty($_POST['confirm-password'])){
+    $message='There is Empty Value(s)';
+    exit();
 } 
 if($stmt = $conn->prepare('select email from system_sers where email=?')){
    $stmt->bind_param('s',$_POST['email']);
    $stmt->execute();
    $stmt->store_result();
    if($stmt->num_rows>0){
-    echo 'User Already Exists!';
+    //echo 'User Already Exists!';
+   // $message='User Already Exists!';
+    header("Location: userExist.php");
    }
    else{
        if($stmt = $conn->prepare('INSERT INTO system_sers(fname, lname, email, province, district, address, specialization, password) values(?,?,?,?,?,?,?,?)')) {
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-        $stmt->bind_param('ssssssss',$_POST['fname'],$_POST['lname'],$_POST['email'],$_POST['province'],$_POST['district'],$_POST['address'],$_POST['$specialization'],$password);
+        $stmt->bind_param('ssssssss',$_POST['fname'],$_POST['lname'],$_POST['email'],$_POST['province'],$_POST['district'],$_POST['address'],$_POST['specialization'],$password);
         $stmt->execute();
-        echo 'Successfully Registered!!';
+        $message='Successfully Registered!!';
+        //echo "alert('Form submitted successfully!');";
+        //echo 'Successfully Registered!!';
+        header("Location: welcome.php");
        }
        else{
-        echo 'An expected Error occurred!';
+        $message='An expected Error occurred!';
+        //echo 'An expected Error occurred!';
+        header("Location: error.php");
        }
     } 
     $stmt->close();
    }
    else{
-    echo 'An Error Occurred!';
+    $message='An Error Occurred!';
+    //echo 'An Error Occurred!';
+    header("Location: error.php");
    }
    $conn->close();
 }
@@ -150,14 +162,15 @@ if($stmt = $conn->prepare('select email from system_sers where email=?')){
                     </div>
                     <div class="row">
                         <label for="password">Password:</label>
-                        <input type="password" maxlength="10" id="password" placeholder="Password(Between 8 and 10 chars)..." name="password">
+                        <input required type="password" minlength="8" maxlength="10" id="password" placeholder="Password(Between 8 and 10 chars)..." name="password">
                         <label class="required">*</label>
                         <label id="pass-required"></label>
                     </div>
                     <div class="row">
                         <label for="confirm-password">Confirm Password:</label>
-                        <input type="password" maxlength="10" id="confirm-password" placeholder="Confirm your password..." name="confirm-password">
+                        <input required type="password" minlength="8" maxlength="10" id="confirm-password" placeholder="Confirm your password..." name="confirm-password">
                         <label class="required">*</label>
+                        <label id="pass-conf-required"></label>
                         <label id="mismatches"></label>
                     </div>
                     <div class="buttons">
