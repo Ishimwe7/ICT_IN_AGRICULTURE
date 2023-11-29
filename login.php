@@ -15,6 +15,7 @@ if(empty($_POST['email'])||empty($_POST['password'])){
     exit('There is Empty Value(s)');
 } 
 if($stmt = $conn->prepare('select email from system_sers where email=?')){
+   $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
    $stmt->bind_param('s',$_POST['email']);
    $stmt->execute();
    $stmt->store_result();
@@ -23,7 +24,8 @@ if($stmt = $conn->prepare('select email from system_sers where email=?')){
     header("Location: index.php");
    }
    else{
-    echo 'Invalid Login';
+    header("Location: invalidUserLogin.php");
+    //echo 'Invalid Login';
    }
 }else{
     echo 'An error occurred!';
