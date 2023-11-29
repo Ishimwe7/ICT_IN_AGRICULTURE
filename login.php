@@ -11,7 +11,7 @@ if(isset($_POST["login"])){
 if(!isset($_POST['email'],$_POST['password'])){
     exit('Empty filed(s)');
 } 
-if(empty($_POST['email'])||empty($_POST['$password'])){
+if(empty($_POST['email'])||empty($_POST['password'])){
     exit('There is Empty Value(s)');
 } 
 if($stmt = $conn->prepare('select email from system_sers where email=?')){
@@ -19,7 +19,8 @@ if($stmt = $conn->prepare('select email from system_sers where email=?')){
    $stmt->execute();
    $stmt->store_result();
    if($stmt->num_rows>0){
-    echo 'Welcome!';
+    //echo 'Welcome!';
+    header("Location: index.php");
    }
    else{
     echo 'Invalid Login';
