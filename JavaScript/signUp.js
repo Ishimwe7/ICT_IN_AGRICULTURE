@@ -96,23 +96,32 @@ else{
 }
 console.log(document.getElementById("north").checked); */
 document.getElementById("submitButton").onclick = function(){
-    if(document.getElementById("fname").value==null){
-        document.getElementById("fname-rewuired").innerHTML="First name required!";
+    if(document.getElementById("fname").value==''){
+        document.getElementById("fname-required").innerHTML="First name required!";
         if(document.getElementById("fname").value.length<3){
-            document.getElementById("fname-rewuired").innerHTML="First name can't be less than 3 characters!";
+            document.getElementById("fname-required").innerHTML="First name can't be less than 3 characters!";
         }
     }
-    if(document.getElementById("lname").value==null){
+    if(document.getElementById("lname").value==''){
         document.getElementById("lname-required").innerHTML="Last name required!";
         if(document.getElementById("lname").innerHTML.length<3){
             document.getElementById("lname-required").innerHTML="Last name can't be less than 3 characters!";
         }
     }
-    if(document.getElementById("email").innerHTML==null){
+    if(document.getElementById("email").value==''){
         document.getElementById("email-required").innerHTML="Email required!";
     }
-    if(document.getElementById("address").innerHTML==null){
+    if(document.getElementById("address").value==''){
         document.getElementById("address-required").innerHTML="Address required!";
+    }
+    if(document.getElementById("password").value==''){
+        document.getElementById("pass-required").innerHTML="Password required!";
+    }
+    if(document.getElementById("confirm-password").value==''){
+        document.getElementById("pass-conf-required").innerHTML="Please confirm password!!";
+    }
+    elseif(document.getElementById("password").value!=document.getElementById("confirm-password").value){
+        document.getElementById("mismatches").innerHTML="Passwords Mismatches!!";
     }
 }
 console.log(document.getElementById("fname").value)
